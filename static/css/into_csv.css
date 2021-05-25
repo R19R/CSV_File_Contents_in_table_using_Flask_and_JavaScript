@@ -1,0 +1,79 @@
+html {
+    margin: 0% 15% ;
+    font-family: 'Roboto';
+    overflow-y: scroll;
+    text-align: center;
+}
+body{
+    margin: 0% 2%;
+    word-spacing: 1px;
+    height: 100%;
+    max-width: 100%;
+    margin-top: 5%;
+    margin-bottom: 1%;
+}
+p{
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 22px;
+
+}
+
+.form{
+    align-items: center;
+    text-align: center;
+    font-size: large;
+    font-weight: lighter;
+    top: -20px;
+}
+input[type=text] input[type=password]{
+    width: 25%;
+    padding : 7px 7px;
+    box-sizing: border-box;
+}
+#btn #btn1{
+    width: 10%;
+    background-color: yellow;
+    color: brown;
+    font-weight: bold;
+    margin-bottom: 2%;
+    border-color: black;
+    text-decoration: none;
+    margin: 10px 20px;
+    padding: 12px 12px;
+    font-size: 16px;
+}
+
+table{ 
+    /*border-collapse: collapse;*/
+    width: 200%;
+    table-layout: fixed;
+    margin: 50px auto;
+    display: block;
+    
+}
+
+#display{
+    border-collapse: collapse;
+    min-width: 1000px;
+    table-layout: fixed;
+    margin: 50px 50px;
+    display: block;
+    position: relative;
+    left: 32%;
+}
+
+td{
+    border: 3px solid blue;
+    font-family: cursive;
+    text-align: center;
+    padding:5px;
+}
+
+#login{
+    display: block;
+}
+
+#details{
+    display: none;
+}

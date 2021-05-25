@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPA</title>
+    <link href="{{url_for('static', filename='css/into_csv.css')}}" rel="stylesheet">
+</head>
+
+<body>
+    <div id='login'>
+        <form>
+            <p>Username <input type="text" id='username' name="uname"></p>
+            <p>Password <input type="password" id="password" name="pword"></p>
+            <button type="submit" id="btn">Login</button>
+        </form>
+    </div>
+    <div id="details">
+        <form>
+            <p>Name <input type="text" id="name_detail" name='name'></p>
+            <p>Comments <input type="text" id="comments_detail" name='comment'></p>
+            
+            <button type="submit" id="btn1">submit</button>
+        </form>
+        <table id="display">
+            <tr>
+                <td>UID</td>
+                <td>Name</td>
+                <td>Comments</td>
+            </tr>
+            {% for value in values %}
+            <tr>
+                
+                <td>{{value[0]}}</td>
+                <td>{{value[1]}}</td>
+                <td>{{value[2]}}</td>
+                
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+
+    
+<script src="{{url_for('static', filename='js/spa1.js')}}"></script>
+</body>
+</html>
